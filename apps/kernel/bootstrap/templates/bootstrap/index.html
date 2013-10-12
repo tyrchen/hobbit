@@ -1,0 +1,241 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block extra_style %}
+    <link href="{% static "bootstrap/css/style.css" %}" rel="stylesheet">
+{% endblock %}
+
+{% block extra_css %}
+{% endblock %}
+
+{% block content %}
+		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html">
+						<img src="{% static "bootstrap/img/logo.png" %}" alt="logo">
+						Ambrosia
+					</a>
+				</div>
+				<div class="collapse navbar-collapse navbar-ex1-collapse">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="index.html">Home</a></li>
+						<li><a href="blog.html">Blog</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="pricing.html">Pricing</a></li>
+						<li><a href="portfolio.html">Portfolio</a></li>
+						<li><a href="contact.html">Contact</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Action</a></li>
+								<li><a href="#">Another action</a></li>
+								<li><a href="#">Something else here</a></li>
+								<li><a href="#">Separated link</a></li>
+								<li><a href="#">One more separated link</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</div>
+		</nav>
+
+		<section class="wrapper-sm bg-primary">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<i class="icon icon-user"></i> Hello, Guest. <a class="btn btn-login" href="login.html">Login here &raquo;</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Image Slider -->
+		<section class="wrapper-sm bg-slider">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12 col-lg-8 col-lg-offset-2">
+						<div id="my-carousel" class="carousel slide">
+							<!-- Carousel items -->
+							<div class="carousel-inner">
+								<div class="item active"><img src="{% static "bootstrap/img/app-1.png" %}" alt="app"/></div>
+								<div class="item"><img src="{% static "bootstrap/img/app-2.png" %}" alt="app"/></div>
+							</div>
+							<!-- Carousel nav -->
+							<a class="carousel-control left" href="#my-carousel" data-slide="prev">&lsaquo;</a>
+							<a class="carousel-control right" href="#my-carousel" data-slide="next">&rsaquo;</a>
+						</div><!-- /.carousel -->
+						<h1 class="carousel-title">Not your regular web application</h1>
+						<p class="carousel-subtitle">The next big thing is arround the corner and you'll be part of it.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Call To Action -->
+		<section class="wrapper-sm bg-secondary">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 text-center">
+						<h2>The email revolution has arrived</h2>
+						<p>Empowered by more than 40.000 customers around the world. Developers love us already.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="wrapper-lg">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6 col-md-3">
+						<h3><i class="icon icon-beaker"></i> Technology</h3>
+						<p>And purely one near this hey therefore darn firefly had ducked overpaid wow irrespective some tearful and mandrill yikes considering far above. Physically less snickered much and and while</p>
+						<a class="btn btn-default" href="#"><i class="icon  icon-info-sign"></i> where more partook</a>
+						<br class="spacer-md">
+					</div>
+					<div class="col-sm-6 col-md-3">
+						<h3><i class="icon icon-cloud"></i> Cloud Based</h3>
+						<p>Purely one near this hey therefore darn firefly had ducked overpaid wow irrespective some tearful and mandrill yikes considering far above. Physically less</p>
+						<a class="btn btn-default" href="#"><i class="icon  icon-info-sign"></i> where more partook &raquo;</a>
+						<br class="spacer-md">
+					</div>
+					<div class="col-sm-6 col-md-3">
+						<h3><i class="icon icon-random"></i> Cross-Platform</h3>
+						<p>One near this hey therefore darn firefly had ducked overpaid wow irrespective some tearful and mandrill yikes considering far above. Physically less snickered much and</p>
+						<a class="btn btn-default" href="#"><i class="icon  icon-info-sign"></i> where more partook &raquo;</a>
+						<br class="spacer-md">
+					</div>
+					 <div class="col-sm-6 col-md-3">
+						<h3><i class="icon icon-github"></i> Integrated</h3>
+						<p>Near this hey therefore darn firefly had ducked overpaid wow irrespective some tearful and mandrill yikes considering far above. Physically less snickered much and and while</p>
+						<a class="btn btn-default" href="#"><i class="icon  icon-info-sign"></i> where more partook &raquo;</a>
+						<br class="spacer-md">
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="wrapper-lg bg-alt">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 text-center">
+						<h2>I've seen the future, it's in my browser</h2>
+						<h4><i class="icon icon-bullhorn"></i> Get to know what users are saying about us</h4>
+						<a href="#" class="btn btn-lg btn-primary">Give it a try &raquo;</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!--testimonials-->
+		<section class="wrapper-lg">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="row">
+							<div class="col-md-8">
+								<h3>We lead the competition so far</h3>
+								<br class="spacer-md">
+								<ul class="media-list">
+									<li class="media">
+										<a class="pull-left" href="#">
+											<img class="media-object avatar" src="{% static "bootstrap/img/user-1.png" %}">
+										</a>
+										<div class="media-body">
+											<h4 class="media-heading"><a href="#">Calisto MT</a></h4>
+											<p>"These guys are friendly and down to earth. I would definitely recommend for anyone looking for a solid host for their sites. I'd recommend them to anyone!"</p>
+										</div><!-- /.media-body -->
+									</li>
+									<li class="media">
+										<a class="pull-left" href="#">
+											<img class="media-object avatar" src="{% static "bootstrap/img/user-2.png" %}">
+										</a>
+										<div class="media-body">
+											<h4 class="media-heading"><a href="#">Lucida Sans</a></h4>
+											<p>"I've ever had downtime since the switch. These guys are friendly and down to earth. I would definitely recommend for anyone looking for a solid host for their sites."</p>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="col-md-4">
+								<div class="well">
+									<blockquote>
+										<p><strong>It's All About The Service;</strong></p>
+										<br>
+										<p>The reason we chose This Company Permanent for our business solutions is simple, it's all about service. You ask for something and it gets done.</p>
+										<br>
+										<p><small>Cambria Bold - <cite title="Source Title">Venture Enterprises CEO.</cite></small></p>
+									</blockquote>
+								</div>
+							</div><!--/.col-lg-4 -->
+						</div><!-- /.row -->
+					</div><!-- /.col-lg-12 -->
+				</div><!-- /.row -->
+			</div><!-- /.container -->
+		</section>
+
+		<section class="wrapper-lg bg-alt">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 text-center">
+						<h2>HTML5 works hard and we mean business</h2>
+						<h3>Bet you want to give it a try</h3>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="wrapper-lg">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-5">
+						<img class="img-responsive" src="{% static "bootstrap/img/product-1.png" %}" alt="">
+					</div>
+					<div class="col-sm-7">
+						<h4><i class="icon icon-shopping-cart"></i> Affordable pricing</h4>
+						<p>FREE SITEBUILDER! Not sure how to build a website? No problem at all! RVSiteBuilder and Parallels SiteBuilder are included on all eleven2 hosting plans. Build a fully featured website in minutes using a fantastic range of tools.
+						FREE SOFTWARE INSTALLER! Install over 110 Scripts Instantly with Softaculous (built in with the e2Panel). It's super easy to use, and you can receive email alerts when new script upgrades are available!</p>
+
+						<hr>
+
+						<h4><i class="icon icon-certificate"></i> A company you can rely on!</h4>
+						<p>FREE SITE MIGRATIONS! Are you currently hosting your website with another company? Receiving a subpar service? Move to eleven2 and start being treated like a real person! We help you transfer everything over to us, free of charge!
+						24X7 PREMIUM TECHNICAL SUPPORT Our doors never close! We can guarantee true 24/7 tech support, weather it be 5am on Christmas Day, or July 4th, we are always here to assist you! Start a live chat or give our tech team a call.</p>
+
+						<hr>
+
+						<h4><i class="icon icon-group"></i> Amazing live support</h4>
+						<p>Our live support team are on site 24 hours a day, 7 days a week. Anytime you need us, we're here to answer any of your questions, problems and concerns. We're so confident our hosting rocks, that if you don't like our shared or reseller hosting, you can receive a full refund within 60 days of signing up!</p>
+						<a href="#" class="btn btn-lg btn-default">Learn more about it &raquo;</a>
+					</div>
+				</div>
+				<br class="spacer-lg">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="well text-center">
+							<h2>Enough Talking. Now back to business!</h2>
+							<br class="spacer-md">
+							<a class="btn btn-lg btn-primary" href="login.html">SIGNUP NOW!</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer class="wrapper-sm bg-secondary">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<p>Designed by <a href="https://twitter.com/heyallanmoreno" target="_blank">@heyallanmoreno</a></p>
+					</div>
+				</div>
+			</div>
+		</footer>
+{% endblock %}
+

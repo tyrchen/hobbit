@@ -1,0 +1,9 @@
+django
+django-tastypie
+gunicorn
+misaka
+MYSQL-Python
+pymongo
+python-dateutil
+requests
+south

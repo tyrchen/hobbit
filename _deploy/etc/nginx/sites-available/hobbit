@@ -1,0 +1,13 @@
+server {
+  listen 80;
+  server_name hobbit.jcnrd.us;
+  access_log /var/log/nginx/hobbit.access.log;
+  error_log /var/log/nginx/hobbit.error.log;
+  location /static/ {
+      root /home/dev/deployment/hobbit/;
+    }
+  location / {
+    proxy_pass http://localhost:9000;
+    include /etc/nginx/proxy_params;
+  }
+}
